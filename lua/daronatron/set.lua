@@ -29,3 +29,14 @@ vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "120"
+
+vim.cmd([[
+  augroup My_group
+    autocmd!
+
+    autocmd FileType css,scss let b:prettier_exec_cmd = "prettier-stylelint"
+    autocmd FileType javascript,javascriptreact,typescript,typescriptreact,css,scss,json,cjs setlocal shiftwidth=2 softtabstop=2 expandtab 
+    autocmd BufWritePre *.tsx,*.ts,*.cjs,*jsx EslintFixAll
+
+  augroup END
+]])
