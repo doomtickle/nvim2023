@@ -49,4 +49,5 @@ return require('packer').startup(function(use)
         }
     }
     use('jxnblk/vim-mdx-js')
+    use('jiangmiao/auto-pairs')
 end)
