@@ -169,6 +169,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/daron.adkins/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["vim-mdx-js"] = {
+    loaded = true,
+    path = "/Users/daron.adkins/.local/share/nvim/site/pack/packer/start/vim-mdx-js",
+    url = "https://github.com/jxnblk/vim-mdx-js"
   }
 }
 

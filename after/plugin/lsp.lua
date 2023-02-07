@@ -4,10 +4,10 @@ lsp.preset("recommended")
 
 lsp.ensure_installed({
   'tsserver',
+  'eslint',
   'sumneko_lua',
   'rust_analyzer',
-  'remark_ls',
-  'gopls'
+  'gopls',
 })
 
 -- Fix Undefined global 'vim'
@@ -21,14 +21,13 @@ lsp.configure('sumneko_lua', {
     }
 })
 
-
 local cmp = require('cmp')
 local cmp_select = {behavior = cmp.SelectBehavior.Select}
 local cmp_mappings = lsp.defaults.cmp_mappings({
-  ['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
-  ['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
-  ['<C-y>'] = cmp.mapping.confirm({ select = true }),
-  ["<C-Space>"] = cmp.mapping.complete(),
+  ['<Cmd-p>'] = cmp.mapping.select_prev_item(cmp_select),
+  ['<Cmd-n>'] = cmp.mapping.select_next_item(cmp_select),
+  ['<Cmd-y>'] = cmp.mapping.confirm({ select = true }),
+  ["<Cmd-Space>"] = cmp.mapping.complete(),
 })
 
 cmp_mappings['<Tab>'] = nil
@@ -39,7 +38,7 @@ lsp.setup_nvim_cmp({
 })
 
 lsp.set_preferences({
-    suggest_lsp_servers = false,
+    suggest_lsp_servers = true,
     sign_icons = {
         error = 'E',
         warn = 'W',
