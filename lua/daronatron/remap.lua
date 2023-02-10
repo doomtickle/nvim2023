@@ -1,5 +1,8 @@
 vim.g.mapleader = " "
-vim.keymap.set("n", "<leader>w", vim.cmd.w)
+vim.keymap.set("n", "<leader>w", function()
+    vim.lsp.buf.format()
+    vim.cmd.w()
+end)
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 -- move blocks in visual mode
@@ -28,4 +31,3 @@ vim.keymap.set("n", "<C-h>", "<C-w>h")
 vim.keymap.set("n", "<C-j>", "<C-w>j")
 vim.keymap.set("n", "<C-k>", "<C-w>k")
 vim.keymap.set("n", "<C-l>", "<C-w>l")
-

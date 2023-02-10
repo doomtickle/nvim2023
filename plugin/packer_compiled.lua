@@ -129,6 +129,11 @@ _G.packer_plugins = {
     path = "/Users/daron.adkins/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  nerdcommenter = {
+    loaded = true,
+    path = "/Users/daron.adkins/.local/share/nvim/site/pack/packer/start/nerdcommenter",
+    url = "https://github.com/preservim/nerdcommenter"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/Users/daron.adkins/.local/share/nvim/site/pack/packer/start/nvim-cmp",
@@ -179,6 +184,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/daron.adkins/.local/share/nvim/site/pack/packer/start/vim-mdx-js",
     url = "https://github.com/jxnblk/vim-mdx-js"
+  },
+  ["vim-surround"] = {
+    loaded = true,
+    path = "/Users/daron.adkins/.local/share/nvim/site/pack/packer/start/vim-surround",
+    url = "https://github.com/tpope/vim-surround"
   }
 }
 
