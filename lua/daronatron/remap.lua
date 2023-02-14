@@ -16,19 +16,23 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 -- keep search results in middle of screen
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
-
 -- yank to system clipboard
 vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
 
+-- lsp format
 vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
-
+-- replace word under cursor
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
-
+-- split vertically
 vim.keymap.set("n", "<leader>vs", ":vsplit<CR><C-w>l")
+-- split horizontally with terminal
 vim.keymap.set("n", "<leader>ts", ":split<CR>:term<CR>i")
+-- Easier split navigation
 vim.keymap.set("n", "<C-h>", "<C-w>h")
 vim.keymap.set("n", "<C-j>", "<C-w>j")
 vim.keymap.set("n", "<C-k>", "<C-w>k")
 vim.keymap.set("n", "<C-l>", "<C-w>l")
+
+-- Make terminal mode work like everything else
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
