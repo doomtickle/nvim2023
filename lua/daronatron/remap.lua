@@ -27,7 +27,7 @@ vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 -- split vertically
 vim.keymap.set("n", "<leader>vs", ":vsplit<CR><C-w>l")
 -- split horizontally with terminal
-vim.keymap.set("n", "<leader>ts", ":split<CR>:resize 20<CR>:term<CR>i")
+vim.keymap.set("n", "<leader>ts", ":split<CR>:resize 8<CR>:term<CR>i")
 -- Easier split navigation
 vim.keymap.set("n", "<C-h>", "<C-w>h")
 vim.keymap.set("n", "<C-j>", "<C-w>j")
