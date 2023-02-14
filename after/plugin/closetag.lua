@@ -1,8 +1,5 @@
 vim.cmd([[
-let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.tsx'
-let g:closetag_xhtml_filenames = '*.xhtml,*.jsx,*.tsx'
 let g:closetag_filetypes = 'html,xhtml,phtml,javascriptreact,typescriptreact'
-let g:closetag_xhtml_filetypes = 'xhtml,jsx,typescriptreact,javascriptreact'
 let g:closetag_emptyTags_caseSensitive = 1
 let g:closetag_regions = {
     \ 'typescript.tsx': 'jsxRegion,tsxRegion',
