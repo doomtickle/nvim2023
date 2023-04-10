@@ -79,11 +79,6 @@ _G.packer_plugins = {
     path = "/Users/daron.adkins/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
-  ["auto-pairs"] = {
-    loaded = true,
-    path = "/Users/daron.adkins/.local/share/nvim/site/pack/packer/start/auto-pairs",
-    url = "https://github.com/jiangmiao/auto-pairs"
-  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/Users/daron.adkins/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -184,6 +179,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/daron.adkins/.local/share/nvim/site/pack/packer/start/vim-mdx-js",
     url = "https://github.com/jxnblk/vim-mdx-js"
+  },
+  ["vim-prettier"] = {
+    loaded = true,
+    path = "/Users/daron.adkins/.local/share/nvim/site/pack/packer/start/vim-prettier",
+    url = "https://github.com/prettier/vim-prettier"
   },
   ["vim-surround"] = {
     loaded = true,
